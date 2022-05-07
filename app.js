@@ -24,3 +24,9 @@ const sunflower = {
 // methods / behaviors
 
 // instance: an object that is created by a class
+
+class Vehicle {
+
+}
+
+console.log(Vehicle)
