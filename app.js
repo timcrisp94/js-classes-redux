@@ -69,4 +69,37 @@ class Plane extends Vehicle {
 
 let plane1 = new Plane()
 
-// create the blueprint
+const dragon = {
+  name: 'Chip',
+  fire: true,
+  fight(){
+    return 5
+  },
+  sing(){
+    return `I am lalala ${this.name}`
+  }
+}
+
+console.log(dragon)
+
+let dragonSong = dragon.sing()
+
+console.log(dragonSong)
+
+const lizard = {
+  name: 'Lizzie',
+  fight(){
+    return 21
+  }
+}
+
+console.log(lizard)
+
+lizard.__proto__ = dragon
+
+let LizzieSong = lizard.sing()
+console.log(LizzieSong)
+
+console.log(lizard.fight())
+
+// the direction of inheritance matters
